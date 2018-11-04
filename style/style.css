@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,700");
+body {
+  margin: 0;
+  height: 100%;
+  font-family: "Open Sans", sans-serif;
+}
+
+body header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+body header .top-logo {
+  padding-top: 35px;
+  padding-left: 30px;
+}
+
+body header .top-logo img {
+  height: 18px;
+  width: 110px;
+}
+
+body header .top-button {
+  padding-top: 35px;
+  -ms-grid-column-align: end;
+      justify-self: end;
+  padding-right: 30px;
+}
+
+body header .top-button button {
+  background: white;
+  color: #ff52bf;
+  border: #ff52bf 1px solid;
+  font-size: 8px;
+  height: 20px;
+  width: 70px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 22px -8px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 0px 22px -8px rgba(0, 0, 0, 0.75);
+  text-transform: capitalize;
+}
+
+body main .section1 {
+  padding-top: 70px;
+}
+
+body main .section1 h1 {
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 1.5em;
+}
+
+body main .section1 p {
+  text-align: center;
+  padding-left: 33%;
+  padding-right: 33%;
+  padding-bottom: 20px;
+  font-size: 0.8em;
+}
+
+body main .section1 button {
+  width: 25%;
+  margin-left: 37.5%;
+  margin-right: 37.5%;
+  height: 35px;
+  color: white;
+  background: #ff52bf;
+  border: none;
+  border-radius: 15px;
+  -webkit-box-shadow: 0px 0px 22px -8px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 0px 22px -8px rgba(0, 0, 0, 0.75);
+  text-transform: capitalize;
+  margin-bottom: 60px;
+}
+
+body main .section1 img {
+  max-width: 100%;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,700');
+
+$headings: 'Poppins', sans-serif;
+$body: 'Open Sans', sans-serif;
+
+$colors: (
+  primary: hsl(322, 100%, 66%),
+  neutral1: hsl(192, 100%, 9%),
+  neutral2: hsl(207, 100%, 98%)
+);
+
+@function color($color-name) {
+  @return map-get($colors, $color-name)
+}
+
+$padding: 30px;
+$padding-top: 35px;
+
+body {
+  margin: 0;
+  height: 100%;
+  font-family: $body;
+  header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    .top-logo {
+      padding-top: $padding-top;
+      padding-left: $padding;
+      img {
+        height: 18px;
+        width: 110px;
+      }
+    }
+    .top-button {
+      padding-top: $padding-top;
+      justify-self: end;
+      padding-right: $padding;
+      button {
+        background: white;
+        color: color(primary);
+        border: color(primary) 1px solid;
+        font-size: 8px;
+        height: 20px;
+        width: 70px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 22px -8px rgba(0,0,0,0.75);
+        text-transform: capitalize;
+      }
+    }
+  }
+  main {
+    .section1 {
+      padding-top: 70px;
+      h1 {
+        text-align: center;
+        text-transform: capitalize;
+        font-weight: 700;
+        font-size: 1.5em;
+      }
+      p {
+        text-align: center;
+        padding-left: 33%;
+        padding-right: 33%;
+        padding-bottom: 20px;
+        font-size: 0.8em;
+      }
+      button {
+        width: 25%;
+        margin-left: 37.5%;
+        margin-right: 37.5%;
+        height: 35px;
+        color: white;
+        background: color(primary);
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0px 0px 22px -8px rgba(0,0,0,0.75);
+        text-transform: capitalize;
+        margin-bottom: 60px;
+      }
+      img {
+        max-width: 100%;
+        padding-left: 50px;
+        padding-right: 50px;
+      }
+    }
+  }
+}
