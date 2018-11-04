@@ -76,9 +76,156 @@ body main .section1 button {
   margin-bottom: 60px;
 }
 
-body main .section1 img {
+body main .section1 .first-img-cont {
+  padding-left: 14%;
+  padding-right: 14%;
   max-width: 100%;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-bottom: 120px;
+}
+
+body main .section1 .first-img-cont .first-img {
+  width: 100%;
+}
+
+body main .section1 .section1-cont {
+  display: -ms-grid;
+  display: grid;
+  padding-bottom: 100px;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+body main .section1 .section1-cont .section1-box1 {
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+body main .section1 .section1-cont .section1-box1 img {
+  height: 25px;
+}
+
+body main .section1 .section1-cont .section1-box1 h1 {
+  font-weight: 700;
+  font-size: 3.8em;
+  margin: 0;
+}
+
+body main .section1 .section1-cont .section1-box1 p {
+  padding: 0;
+  color: grey;
+}
+
+body main .section1 .section1-cont .section1-box2 {
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+body main .section1 .section1-cont .section1-box2 img {
+  height: 25px;
+}
+
+body main .section1 .section1-cont .section1-box2 h1 {
+  font-weight: 700;
+  font-size: 3.8em;
+  margin: 0;
+}
+
+body main .section1 .section1-cont .section1-box2 p {
+  padding: 0;
+  color: grey;
+}
+
+body main .section2 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+}
+
+body main .section2 .section2-img {
+  width: 100%;
+  padding-top: 150px;
+}
+
+body main .section2 .section2-img2 {
+  width: 100%;
+}
+
+body main .section2 .section2-img3 {
+  width: 100%;
+}
+
+body main .section2 .section2-img4 {
+  width: 100%;
+}
+
+body main .section2 .section2-box1 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  background: #F6FBFF;
+}
+
+body main .section2 .section2-box1 .box1-div1 {
+  width: 50%;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+body main .section2 .section2-box1 .box1-div2 {
+  width: 50%;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+body main .section2 .section2-box1 .box1-div2 .box1-div2-img {
+  width: 100%;
+}
+
+body main .section2 .section2-box2 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+body main .section2 .section2-box2 .box2-div1 {
+  width: 50%;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+body main .section2 .section2-box2 .box2-div1 .box2-div1-img {
+  width: 100%;
+}
+
+body main .section2 .section2-box2 .box2-div2 {
+  width: 50%;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+body main .section2 .section2-box3 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+body main .section2 .section2-box3 .box3-div1 {
+  width: 50%;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+body main .section2 .section2-box3 .box3-div2 {
+  width: 50%;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+body main .section2 .section2-box3 .box3-div2 .box3-div2-img {
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */
