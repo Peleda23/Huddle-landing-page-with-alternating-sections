@@ -16,6 +16,14 @@ $colors: (
 $padding: 30px;
 $padding-top: 35px;
 
+$mobile: 500px;
+
+@mixin mobile {
+  @media (max-width: #{$mobile}) {
+    @content;
+  }
+}
+
 .btn {
   width: 20%;
   margin-left: 40%;
@@ -24,10 +32,17 @@ $padding-top: 35px;
   color: white;
   background: color(primary);
   border: none;
-  border-radius: 20px;
+  border-radius: 23px;
   box-shadow: 0px 0px 22px -8px rgba(0,0,0,0.75);
   text-transform: capitalize;
   margin-bottom: 60px;
+  @include mobile {
+    width: 55%;
+    margin-left: 25%;
+    margin-right: 25%;
+    font-weight: 700;
+    font-size: 12px;
+  }
 }
 .heading {
   text-align: center;
@@ -35,6 +50,10 @@ $padding-top: 35px;
   font-weight: 700;
   font-size: 1.5em;
   font-family: $headings;
+  @include mobile {
+    padding-right: 25px;
+    padding-left: 25px;
+  }
 }
 .section2-img1 {
   width: 100%;
@@ -90,6 +109,11 @@ body {
         padding-right: 33%;
         padding-bottom: 20px;
         font-size: 0.8em;
+        @include mobile {
+          padding-left: 9%;
+          padding-right: 9%;
+          font-size: 0.9em;
+        }
       }
       
       .first-img-cont {
@@ -97,6 +121,10 @@ body {
         padding-right: 14%;
         max-width: 100%;
         padding-bottom: 120px;
+        @include mobile {
+          padding-left: 10%;
+          padding-right: 10%;
+        }
         .first-img {
           width: 100%;
         }
@@ -105,10 +133,20 @@ body {
         display: grid;
         padding-bottom: 100px;
         grid-template-columns: 1fr 1fr;
+        @include mobile {
+          display: block;
+        }
         .section1-box1 {
           justify-self: center;
+          padding-bottom: 60px;
+          @include mobile {
+            text-align: center;
+          }
           img {
             height: 25px;
+            @include mobile {
+              padding-right: 26%;
+            }
           }
           h1 {
             font-weight: 700;
@@ -122,13 +160,22 @@ body {
         }
         .section1-box2 {
           justify-self: center;
+          @include mobile {
+            text-align: center;
+          }
           img {
             height: 25px;
+            @include mobile {
+              padding-right: 26%;
+            }
           }
           h1 {
             font-weight: 700;
             font-size: 3.8em;
             margin: 0;
+            @include mobile {
+              font-size: 3.3em;
+            }
           }
           p {
             padding: 0;
@@ -203,14 +250,10 @@ body {
       background: color(neutral1);
       display: grid;
       grid-template-columns: 1fr 1fr;
-      .footer-cont1 {
-        padding-right: 40%;
-        padding-left: 100px;
-      }
-      .footer-cont2 {
-        padding-left: 100px;
-        padding-right: 40%;
-      }
+      justify-items: center;
+      grid-gap: 30%;
+      padding-left: 10%;
+      padding-right: 10%;
     }
     h1{
       text-transform: capitalize;
@@ -220,14 +263,14 @@ body {
    }
     p {
       font-size: 0.8em;
-      padding-right: 100px;
+      // padding-right: 100px;
     }
     form {
       input[type="text"] {
         height: 30px;
         border-radius: 4px;
         border: none;
-        width: 200px;
+        min-width: 50%;
       }
       button {
         background: color(primary);
