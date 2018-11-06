@@ -188,20 +188,38 @@ body {
       display: grid;
       grid-template-rows: 1fr 1fr 1fr;
       .section2-img {
+        display: block;
         width: 100%;
-        padding-top: 150px;
+        position: relative;
+        top: 100px;
+        background-repeat: no-repeat;
+        background-image: url(bg-section-top-desktop-1.svg);
+        @include mobile {
+          background-image: url(bg-section-top-mobile-1.svg);
+        
+        }
       }
       .section2-box1 {
         display: grid;
         grid-template-columns: 1fr 1fr;
         background: #F6FBFF;
+        @include mobile {
+          display: flex;
+          flex-direction: column;
+        }
         .box1-div1 {
           width: 50%;
           justify-self: center;
+          @include mobile {
+            width: 100%;
+          }
         }
         .box1-div2 {
           width: 50%;
           justify-self: center;
+          @include mobile {
+            width: 100%;
+          }
           .box1-div2-img {
             width: 100%;
           }
@@ -210,9 +228,16 @@ body {
       .section2-box2 {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        @include mobile {
+          display: flex;
+          flex-direction: column;
+        }
         .box2-div1 {
           width: 50%;
           justify-self: center;
+          @include mobile {
+            width: 100%;
+          }
           .box2-div1-img {
             width: 100%;
           }
@@ -220,19 +245,32 @@ body {
         .box2-div2 {
           width: 50%;
           justify-self: center;
+          @include mobile {
+            width: 100%;
+          }
         }
       }
       .section2-box3 {
         display: grid;
         grid-template-columns: 1fr 1fr;
         background: #F6FBFF;
+        @include mobile {
+          display: flex;
+          flex-direction: column;
+        }
         .box3-div1 {
           width: 50%;
           justify-self: center;
+          @include mobile {
+            width: 100%;
+          }
         }
         .box3-div2 {
           width: 50%;
           justify-self: center;
+          @include mobile {
+            width: 100%;
+          }
           .box3-div2-img {
             width: 100%;
           }
