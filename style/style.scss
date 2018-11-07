@@ -13,15 +13,110 @@ $colors: (
   @return map-get($colors, $color-name)
 }
 
+.btn {
+  border: none;
+  background: color(primary);
+  color: #fff;
+  height: 35px;
+  width: 160px;
+  border-radius: 18px;
+  text-transform: capitalize;
+  font-family: $headings;
+  font-weight: 700;
+}
+
 body {
   margin: 0;
 }
 
 header {
+  padding: {
+    right: 25px;
+    left: 25px;
+    top: 25px;
+  }
   display: flex;
   justify-content: space-between;
   img {
     height: 25px;
     width: 115px;
+  }
+  button {
+    border: 1px solid color(primary);
+    background: white;
+    color: color(primary);
+    height: 25px;
+    width: 80px;
+    border-radius: 15px;
+  }
+}
+
+.section1 {
+  padding-top: 60px;
+  h1 {
+    font-family: $headings;
+    padding: 0 30px 0 30px;
+    text-align: center;
+    font-weight: 700;
+  }
+  p {
+    font-family: $body;
+    font-size: 0.9em;
+    text-align: center;
+    padding: 0 20px 0 20px;
+  }
+  .btn-wrapper {
+    text-align: center;
+    padding: 20px 0 50px 0;
+  }
+  .img-div {
+    width: 100%;
+    text-align: center;
+    img {
+      width: 83%;
+    }
+  }
+  .icons-div {
+    text-align: center;
+    
+    .h1 {
+      font-size: 55px;
+      margin: 0;
+      text-align: none;
+    }
+    .icons {
+      // padding-left: 30%;
+      height: 30px;
+    }
+    p {
+      font-family: $body;
+      color: grey;
+      font-size: 14px;
+      margin-top: 0;
+    }
+  }
+}
+
+.section2 {
+  .section2-wrapper {
+    display: flex;
+    flex-direction: column;
+    .section2-img1 {
+      text-align: center;
+      img {
+        width: 75%;
+      }
+    }
+    h1 {
+      font-family: $headings;
+      text-align: center;
+      font-weight: 700;
+    }
+    p {
+      font-family: $body;
+      text-align: center;
+      font-size: 0.9em;
+      padding: 0 5% 0 5%;
+    }
   }
 }
