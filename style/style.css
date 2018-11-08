@@ -36,7 +36,7 @@ header {
 }
 
 header img {
-  height: 25px;
+  height: 22px;
   width: 115px;
 }
 
@@ -72,6 +72,7 @@ header button {
 .section1 .img-div {
   width: 100%;
   text-align: center;
+  padding: 70px 0 80px 0;
 }
 
 .section1 .img-div img {
@@ -80,6 +81,7 @@ header button {
 
 .section1 .icons-div {
   text-align: center;
+  padding-bottom: 80px;
 }
 
 .section1 .icons-div .h1 {
@@ -89,7 +91,8 @@ header button {
 }
 
 .section1 .icons-div .icons {
-  height: 30px;
+  padding-right: 28%;
+  height: 25px;
 }
 
 .section1 .icons-div p {
@@ -97,6 +100,42 @@ header button {
   color: grey;
   font-size: 14px;
   margin-top: 0;
+}
+
+.section2 .section2-img-img {
+  display: block;
+  text-indent: -9999px;
+  width: 100%;
+  height: 82px;
+  background: url(bg-section-top-mobile-1.svg);
+  background-size: 100% 82px;
+}
+
+.section2 .section2-img-img2 {
+  display: block;
+  text-indent: -9999px;
+  width: 100%;
+  height: 82px;
+  background: url(bg-section-bottom-mobile-1.svg);
+  background-size: 100% 82px;
+}
+
+.section2 .section2-img-img3 {
+  display: block;
+  text-indent: -9999px;
+  width: 100%;
+  height: 82px;
+  background: url(bg-section-top-mobile-2.svg);
+  background-size: 100% 82px;
+}
+
+.section2 .section2-img-img4 {
+  display: block;
+  text-indent: -9999px;
+  width: 100%;
+  height: 82px;
+  background: url(bg-section-bottom-mobile-2.svg);
+  background-size: 100% 82px;
 }
 
 .section2 .section2-wrapper {
@@ -109,18 +148,24 @@ header button {
           flex-direction: column;
 }
 
+.section2 .section2-wrapper .box-box {
+  background: #f5faff;
+}
+
 .section2 .section2-wrapper .section2-img1 {
   text-align: center;
+  padding: 100px 0 0 0;
 }
 
 .section2 .section2-wrapper .section2-img1 img {
-  width: 75%;
+  width: 70%;
 }
 
 .section2 .section2-wrapper h1 {
   font-family: "Poppins", sans-serif;
   text-align: center;
   font-weight: 700;
+  padding-top: 50px;
 }
 
 .section2 .section2-wrapper p {
@@ -128,6 +173,10 @@ header button {
   text-align: center;
   font-size: 0.9em;
   padding: 0 5% 0 5%;
+}
+
+.section2 .section2-wrapper .id {
+  padding-bottom: 80px;
 }
 
 .section3 {
@@ -138,9 +187,9 @@ header button {
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-orient: vertical;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: column-reverse;
-          flex-direction: column-reverse;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   text-align: center;
   padding-top: 30%;
 }
@@ -150,8 +199,17 @@ header button {
   font-weight: 700;
 }
 
-footer {
-  padding: 0 15px 0 15px;
+footer .footer-img {
+  display: block;
+  text-indent: -9999px;
+  width: 100%;
+  height: 82px;
+  background: url(bg-footer-top-mobile.svg);
+  background-size: 100% 82px;
+}
+
+footer .footer-wraper {
+  padding: 0 20px 0 20px;
   background: #00252e;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -164,35 +222,74 @@ footer {
       justify-content: space-around;
 }
 
-footer #logo {
+footer .footer-wraper #logo {
   height: 25px;
-  width: 115px;
+  width: 126px;
 }
 
-footer p {
+footer .footer-wraper p {
   color: white;
   font-family: "Open Sans", sans-serif;
-  font-size: 15px;
+  font-size: 0.8em;
+  padding-right: 30px;
+  font-weight: 700;
 }
 
-footer h1 {
+footer .footer-wraper p img {
+  height: 15px;
+  width: 15px;
+  padding-right: 15px;
+}
+
+footer .footer-wraper h1 {
   color: white;
   font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.2em;
 }
 
-footer img {
+footer .footer-wraper img {
   height: 30px;
   width: 30px;
 }
 
-footer form {
-  display: block;
-  -webkit-box-ordinal-group: 3;
-      -ms-flex-order: 2;
-          order: 2;
+footer .footer-wraper form {
+  text-align: right;
 }
 
-footer .box1 {
-  padding: 20px 0 0 0;
+footer .footer-wraper form input[type="text"] {
+  border: none;
+  border-radius: 5px;
+  height: 35px;
+  width: 100%;
+}
+
+footer .footer-wraper form button {
+  height: 35px;
+  width: 40%;
+  background: #ff52bf;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 0.9em;
+  margin: 10px 0 0 0;
+}
+
+footer .footer-wraper .box1 {
+  padding: 20px 0 30px 0;
+}
+
+footer .footer-wraper .box1 p {
+  padding-bottom: 10px;
+}
+
+footer .footer-wraper .box2 {
+  padding: 20px 0 40px 0;
+}
+
+footer .footer-wraper .box2 p {
+  padding-bottom: 10px;
 }
 /*# sourceMappingURL=style.css.map */
